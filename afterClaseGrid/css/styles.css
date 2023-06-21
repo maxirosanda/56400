@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navegador{
+    background-color: #4902a7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navegador img{
+    margin: 10px;
+}
+.navegador ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+
+.navegador ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.carrousel{
+    height: 300px;
+    background-color: aqua;
+    margin-top: 84px;
+}
+
+.productos{
+    height: 2000px;
+    background-color: blue;
+}
+
+.piePagina{
+    background-color: #4902a7;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+    column-gap: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+}
+.piePagina .info, .piePagina .contactos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+.piePagina .info .descripcion img {
+    float: left;
+    margin: 10px;
+}
+.piePagina .contactos .mapa{
+    width: 90%;
+    height: 200px;
+    border-radius: 8px;
+}
+.piePagina .redes i{
+    font-size: 32px;
+    margin: 10px;
+}
