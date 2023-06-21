@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.tarjeta{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+}
+.tarjeta2{
+    height: 50px;
+}
+*/
+
+.padre{
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 300px 400px;
+    gap: 10px;
+    color: white;
+    /*justify-content: space-around;*/
+    /*justify-items: center;*/
+    /*align-content: space-around;*/
+    /*align-items: center;*/
+
+
+}
+.hijos{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+.hijo1{
+    background-color: blue;
+    
+
+}
+.hijo2{
+    background-color: blueviolet;
+    /*justify-self: end;*/
+   /* align-self: center;*/
+}
+.hijo3{
+    background-color: brown;
+}
+
+.hijo4{
+    background-color: chartreuse;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="shortcut icon" href="../multimedia/img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navegador">
+            <ul >
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./contactos.html">Contactos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo-principal">Contactos</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3443059670435!2d-58.596540125406804!3d-34.64600667293918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7847dfb595b%3A0x921fb821388e2cbc!2sMcDonald&#39;s%20AR6!5e0!3m2!1ses!2sar!4v1685660775114!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="">
+            <label for="mail">Email: </label>
+            <input type="email" name="mail" id="mail" placeholder="Ingrese su Email" required>
+            <label for="datos">Nombre y Apellido</label>
+            <input type="text" name="nom_Apell" id="datos" placeholder="Ingrese nombre y apellido" required>
+            <label for="tel">Tel: </label>
+            <input type="tel" name="tel" id="tel" placeholder="Ingrese su telefono">
+            <label for="dni">DNI: </label>
+            <input type="number" name="dni" id="dni" placeholder="Ingrese DNI" required>
+            <br>
+            <input type="radio" name="genero" id="hombre" value="hombre">
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="genero" id="mujer" value="mujer">
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="genero" id="nobinario" value="nobinario">
+            <label for="nobinario">No binario</label>
+            <br>
+            <label for="terminos">Acepta terminos y condiciones</label>
+            <input type="checkbox" name="terminos" id="terminos" value="acepto" required>
+            <br>
+            <select name="talle">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <br>
+            <label for="mensaje">Mensaje: </label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

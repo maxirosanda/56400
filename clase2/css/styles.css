@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.navegador{
+    background-color: #075d56;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navegador .logo{
+    width: 70px;
+    height: 70px;
+}
+.navegador ul{
+    margin: 0px 15px;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+} 
+.navegador ul li a {
+    display:block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    padding: 10px 20px;
+
+}
+.portada{
+    height: 350px;
+    background-image: url(../multimedia/img/paisaje1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portada h1{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+
+
+.resaltado{
+    color: #075d56;
+}
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tarjeta{
+    width: 250px;
+    border: solid 5px black;
+    border-radius: 5px;
+    margin: 10px;
+    color: #075d56;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.tarjeta h4{
+    font-size: 24px;
+}
+.tarjeta p{
+   font-size: 18px;
+}
+.tarjeta img{
+    width: 100%;
+}
+
+.tarjeta button{
+    background-color: #075d56;
+    color: white;
+    width: 100px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.bloque{
+    /*
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    */
+    margin: 10px 5px;
+    /*
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    */
+    padding: 10px 15px;
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    /*
+    border: 3px solid  #880d0d;
+    */
+    /*
+    border-color: #880d0d;
+    border-width: 10px;
+    border-style:solid;
+    */
+    border-top: 3px solid #11939a;
+    border-bottom: 10px dashed #0eb013;
+    border-left: 3px solid #5a0537;
+    border-right: 3px solid #0eb013;
+    border-radius: 30px;
+
+}
+.videoContenedor{
+    position: relative;
+}
+.videoContenedor video{
+    width: 100%;
+}
+.videoContenedor .contenido{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+.videoContenedor h3 , .videoContenedor p{
+    text-align: center;
+    z-index: 2;
+    color: white;
+    font-size: 56px;
+}
+
+.videoContenedor p{
+    font-size: 25px;
+}
+
+.promoDescuento{
+    padding: 20px;
+    font-size: 16px;
+    background-color: #0eb013;
+    width: max-content;
+}
+
+.redes i {
+    font-size: 32px;
+    margin: 10px;
+    color: #075d56;
+}

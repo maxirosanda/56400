@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,300px);
+    gap: 10px;
+    grid-template-areas: "navegador encabezado encabezado encabezado "
+                         "navegador principal  principal  publicidad"
+                         "navegador principal  principal  publicidad"
+                         "navegador pie        pie        pie";
+}
+.encabezado{
+    background-color: brown;
+    grid-area: encabezado ;
+}
+.navegador{
+    background-color:blue ;
+    grid-area: navegador;
+}
+
+.principal{
+    background-color: blueviolet;
+    grid-area: principal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+.publicidad{
+    background-color: chocolate;
+    grid-area: publicidad;
+}
+
+.pie{
+    background-color: cornflowerblue;
+    grid-area: pie;
+}

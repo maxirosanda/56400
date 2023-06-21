@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formulario{
+    width: 600px;
+    font-size: 18px;
+    margin: 30px auto;
+    border-radius: 5px;
+    color: white;
+    padding: 30px;
+    background-color: blue;
+    display: grid;
+    row-gap: 30px;
+    column-gap: 10px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "label-nombre    input-nombre    label-apellido    input-apellido"
+                         "label-tel       input-tel       input-tel         input-tel"
+                         "label-mail      input-mail      input-mail        input-mail"
+                         "label-terminos  label-terminos  input-terminos    ... "
+                         "btn             ...            ...              ...";
+}
+.formulario input{
+    background-color: blue;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.642);
+}
+.formulario input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+
+}
+.formulario label:nth-child(1){
+    grid-area: label-nombre ;
+}
+.formulario input:nth-child(2){
+    grid-area: input-nombre ;
+}
+.formulario label:nth-child(3){
+    grid-area: label-apellido ;
+}
+.formulario input:nth-child(4){
+    grid-area: input-apellido ;
+}
+
+.formulario label:nth-child(5){
+    grid-area: label-tel ;
+}
+.formulario input:nth-child(6){
+    grid-area: input-tel;
+}
+
+.formulario label:nth-child(7){
+    grid-area: label-mail ;
+}
+.formulario input:nth-child(8){
+    grid-area: input-mail;
+}
+
+.formulario label:nth-child(9){
+    grid-area: label-terminos ;
+}
+.formulario input:nth-child(10){
+    grid-area: input-terminos;
+}
+
+.formulario button:nth-child(11){
+    grid-area: btn;
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
