@@ -14,16 +14,26 @@
     </header>
     <main>
         <form class="formulario">
-            <label for="nombre">Nombre: </label>
-            <input type="text" name="nombre" id="nombre" required>
-            <label for="apellido">Apellido: </label>
-            <input type="text" name="apellido" id="apellido" required>
-            <label for="tel">Tel: </label>
-            <input type="tel" name="tel" id="tel" required>
-            <label for="mail">Mail: </label>
-            <input type="email" name="mail" id="mail" required>
-            <label for="acepta">Acepta terminos y condiciones </label>
-            <input type="checkbox" name="acepta" id="acepta" value="si" required>
+            <div class="dato dato-nombre">
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div class="dato dato-apellido">
+                <label for="apellido">Apellido: </label>
+                <input type="text" name="apellido" id="apellido" required>
+            </div>
+           <div class="dato dato-tel"> 
+                <label for="tel">Tel: </label>
+                <input type="tel" name="tel" id="tel" required>
+           </div>
+            <div class="dato dato-mail">
+                <label for="mail">Mail: </label>
+                <input type="email" name="mail" id="mail" required>
+            </div>
+            <div class=" dato-terminos">
+                <label for="acepta">Acepta terminos y condiciones </label>
+                <input type="checkbox" name="acepta" id="acepta" value="si" required>
+            </div>
             <button type="submit">Enviar</button>
         </form>
     </main>

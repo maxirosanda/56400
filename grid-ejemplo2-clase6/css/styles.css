@@ -6,37 +6,97 @@
 
 .contenedor{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,300px);
-    gap: 10px;
-    grid-template-areas: "navegador encabezado encabezado encabezado "
-                         "navegador principal  principal  publicidad"
-                         "navegador principal  principal  publicidad"
-                         "navegador pie        pie        pie";
-}
-.encabezado{
-    background-color: brown;
-    grid-area: encabezado ;
-}
-.navegador{
-    background-color:blue ;
-    grid-area: navegador;
+    grid-template-columns: 1fr;
 }
 
-.principal{
-    background-color: blueviolet;
-    grid-area: principal;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
+
+.header{
+    background-color: blue;
 }
+
+.nav{
+    background-color: aquamarine;
+}
+.productos{
+    background-color: burlywood;
+}
+.servicios{
+    background-color: blue;
+}
+
 .publicidad{
-    background-color: chocolate;
-    grid-area: publicidad;
+    background-color: blueviolet;
 }
 
-.pie{
-    background-color: cornflowerblue;
-    grid-area: pie;
+.footer{
+    background-color: chartreuse;
+}
+@media(min-width:576px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header{
+         grid-column: 1/3;
+         background-color: blue;
+     }
+     
+     .nav{
+        grid-column: 1/3;
+         background-color: aquamarine;
+     }
+     .productos{
+         grid-column: 1/2 ;
+         background-color: burlywood;
+     }
+     .servicios{
+         grid-column: 2/3;
+         background-color: blue;
+     }
+     
+     .publicidad{
+        grid-column: 1/3;
+         background-color: blueviolet;
+     }
+     
+     .footer{
+         grid-column: 1/3;
+         background-color: chartreuse;
+     }
+}
+
+@media(min-width:1024px){
+    .contenedor{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .header{
+         grid-column: 2/5;
+         background-color: blue;
+     }
+     
+     .nav{
+        grid-column: 1/2;
+        grid-row: 1/5;
+         background-color: aquamarine;
+     }
+     .productos{
+         grid-column: 2/4 ;
+         background-color: burlywood;
+     }
+     .servicios{
+         grid-column: 2/4;
+         background-color: blue;
+     }
+     
+     .publicidad{
+        grid-column: 4/5;
+        grid-row: 2/4;
+         background-color: blueviolet;
+     }
+     
+     .footer{
+         grid-column: 2/5;
+         background-color: chartreuse;
+     }
 }

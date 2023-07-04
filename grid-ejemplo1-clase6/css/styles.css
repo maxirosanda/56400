@@ -26,23 +26,25 @@
 .padre{
     display: grid;
     height: 1000px;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px 400px;
     gap: 10px;
     color: white;
-    /*justify-content: space-around;*/
+    /*justify-content: start;*/
     /*justify-items: center;*/
     /*align-content: space-around;*/
     /*align-items: center;*/
 
 
 }
+
 .hijos{
     display: flex;
     flex-direction: column;
     padding: 10px;
     align-items: center;
 }
+
 .hijo1{
     background-color: blue;
     
@@ -50,8 +52,8 @@
 }
 .hijo2{
     background-color: blueviolet;
-    /*justify-self: end;*/
-   /* align-self: center;*/
+    justify-self: center;
+    align-self: center;
 }
 .hijo3{
     background-color: brown;

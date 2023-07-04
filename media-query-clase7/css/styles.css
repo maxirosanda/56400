@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja-color{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin: 10px;
+}
+@media(max-width:768px){
+    .caja-color{
+        background-color: blue;
+    }
+}
+
+@media(max-width:576px){
+    .caja-color{
+        width: 400px;
+    }
+}
