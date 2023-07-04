@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: blue;
+    margin: 10px;
+    cursor: pointer;
+}
+.ejemplos-not div:not(.caja){
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    margin: 10px;
+}
+.caja:hover{
+    background-color: rgb(29, 29, 193);
+}
+
+.boton{
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: blueviolet;
+    width: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 15px;
+    transition: 0.5s;
+    
+    
+}
+
+.boton1:visited{
+    background-color: blue;
+}
+
+.boton2:hover{
+    
+    background-color: brown;
+}
+
+.boton3:active{
+    background-color: cadetblue;
+}
+
+.boton4:visited{
+    color: white;
+}
+.boton4:link{
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 15px;
+    transition: 0.5s;
+    background-color: chartreuse;
+}
+
+
+.lista li:nth-child(3){
+    font-size: 24px;
+}
+
+.lista2 h2:nth-child(3){
+    color: blueviolet;
+}
+
+.nombre:focus{
+    border: 2px solid black;
+}

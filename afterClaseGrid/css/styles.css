@@ -9,9 +9,9 @@
 .navegador{
     background-color: #4902a7;
     position: fixed;
+    z-index: 2;
     top: 0;
     width: 100%;
-    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,15 +34,52 @@
     padding: 10px 20px;
 }
 
-.carrousel{
-    height: 300px;
-    background-color: aqua;
+.header{
     margin-top: 84px;
-}
 
-.productos{
-    height: 2000px;
-    background-color: blue;
+}
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    
+}
+.carousel-caption h5{
+    font-size: 48px;
+    text-shadow: 2px 2px 3px #000000;
+}
+.carousel-caption p {
+    font-size: 32px;
+    text-shadow: 2px 2px 3px #000000;
+}
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.producto{
+    width: 270px;
+    border: 2px solid #030000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+.producto__img{
+    width: 100%;
+    height: 150x;
+    object-fit: cover;
+}
+.boton{
+    background-color: #4902a7 ;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 15px;
 }
 
 .piePagina{
@@ -79,7 +116,7 @@
     .navegador{
         position: static;
     }
-    .carrousel{
+    .header{
         margin-top: 0px;
     }
     .piePagina{
@@ -89,6 +126,20 @@
         grid-column: 1/3;
     }
 
+}
+@media(max-width:768px){
+    .carousel-item img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        
+    }
+    .piePagina{
+        grid-template-columns: 1fr;
+    }
+    .piePagina .redes{
+        grid-column: auto;
+    }
 }
 @media(max-width:576px){
     .navegador .menu {
@@ -107,6 +158,7 @@
     .navegador ul{
         position: fixed;
         top: 0;
+        z-index: 2;
         left: -500px;
         background-color: white;
         width: 80vw;
@@ -120,13 +172,5 @@
     }
     .navegador ul li a{
         color: black;
-    }
-}
-@media(max-width:768px){
-    .piePagina{
-        grid-template-columns: 1fr;
-    }
-    .piePagina .redes{
-        grid-column: auto;
     }
 }
