@@ -31,14 +31,87 @@
     border-bottom: 2px solid white;
     outline: none;
 }
-.formulario button {
+.boton {
     padding: 10px 15px;
     font-size: 20px;
     margin: 10px;
     border: none;
     border-radius: 5px;
 }
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,200px);
+    gap: 10px;
+    margin: 10px;
+    grid-template-areas: "img1  img1  img2  img2"
+                         "img1  img1  img3  img4"
+                         "img1  img1  img5  img6"
+                         "img7  img7  img7  img8"
+                         "img9  img9  img11 img8"
+                         "img12 img10 img10 img8";
+}
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img1{
+    grid-area: img1;
+    background-image: url(../multimedia/img/galeria/paisaje1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px #000;
 
+}
+.img1 h3 {
+    font-size: 28px;
+}
+.img1 p {
+    font-size: 18px;
+}
+.img1 button {
+
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+.img9{
+    grid-area: img9;
+}
+.img10{
+    grid-area: img10;
+}
+.img11{
+    grid-area: img11;
+}
+.img12{
+    grid-area: img12;
+}
 @media(min-width:576px){
     .formulario{
         grid-template-columns: 1fr 1fr 1fr 1fr;
