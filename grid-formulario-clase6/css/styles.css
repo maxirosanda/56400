@@ -22,7 +22,7 @@
 }
 .formulario .dato input{
     background-color: transparent;
-    border: none;
+    border: 0;
     border-bottom: 1px solid white;
     color: white;
 }
@@ -30,6 +30,14 @@
     border: 0;
     border-bottom: 2px solid white;
     outline: none;
+}
+.formulario .dato input:-webkit-autofill,
+.formulario .dato:-webkit-autofill:hover, 
+.formulario .dato input:-webkit-autofill:focus {
+    box-shadow:0 0 0 30px rgb(31, 31, 51) inset !important;
+    -webkit-text-fill-color: white;
+    
+
 }
 .formulario button {
     padding: 10px 15px;
