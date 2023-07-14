@@ -1,0 +1,43 @@
+.piePagina{
+    background-color: $fondo-primario;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+    column-gap: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-items: center;
+    @media(max-width:1200px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media(max-width:768px){
+        grid-template-columns: 1fr;
+    }
+    .info{
+       @include flex-column-gap(100%,20px,40px);
+        .descripcion img {
+            float: left;
+            margin: 10px;
+        }
+    }
+    .contactos{
+        @include flex-column-gap(100%,20px,40px);
+        .mapa{
+            width: 90%;
+            height: 200px;
+            border-radius: 8px;
+        }
+    }
+    .redes i{
+        font-size: 32px;
+        margin: 10px;
+        @media(max-width:1200px){
+                grid-column: 1/3;
+            
+        }
+        @media(max-width:768px){
+            grid-column: auto;
+        }
+        
+    }
+}

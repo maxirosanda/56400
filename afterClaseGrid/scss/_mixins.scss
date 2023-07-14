@@ -1,0 +1,16 @@
+@mixin flex-column-gap($width,$gap,$padding){
+    width: $width;
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    padding: $padding;
+}
+@mixin boton($width,$bg){
+    width: $width;
+    background-color: $bg;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 15px;
+}
