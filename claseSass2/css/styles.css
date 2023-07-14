@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navegador {
+  background-color: blue;
+}
+.navegador > ul {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+.navegador > ul > li {
+  position: relative;
+}
+.navegador > ul > li > ul {
+  position: absolute;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  left: -5px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 3s;
+}
+.navegador > ul > li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+.navegador > ul > li a:hover + ul {
+  max-height: 500px;
+}
+
+.tarjeta {
+  width: 300px;
+  border: 2px solid #000;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.tarjeta img {
+  width: 100%;
+}
+.tarjeta p {
+  padding: 0px 10px;
+}
+.tarjeta button {
+  width: 100px;
+  margin: 10px;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.footer button {
+  width: 200px;
+  margin: 10px;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+}
+.footer .redes {
+  margin: 15px;
+}
+.footer .redes i {
+  font-size: 30px;
+  margin: 0px 10px;
+}
+.footer .redes .twitter {
+  color: #55acee;
+}
+.footer .redes .facebook {
+  color: #3a5795;
+}
+.footer .redes .whatsapp {
+  color: #4fcb5b;
+}
+
+/*# sourceMappingURL=styles.css.map */

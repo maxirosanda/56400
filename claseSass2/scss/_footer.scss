@@ -1,0 +1,20 @@
+
+.footer{
+    button{
+        @include boton(green,white,200px)
+    }
+    .redes{
+        margin: 15px;
+        i{
+            font-size: 30px;
+            margin: 0px 10px;
+
+        }
+
+       @each $clave, $valor in $redes{
+            .#{$clave}{
+                color:$valor;
+            }
+       }
+    }
+}
