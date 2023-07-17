@@ -1,0 +1,31 @@
+
+.navegador{
+    background-color: $bg-color;
+    > ul{
+        list-style: none;
+        display: flex;
+        justify-content: end;
+         > li{
+            position: relative;
+            > ul{
+                position: absolute;
+                background-color: $bg-color-secondary;
+                display: flex;
+                flex-direction: column;
+                left: -5px;
+                max-height: 0px;
+                overflow: hidden;
+                transition: 3s;
+            }
+             a{
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 10px 20px;
+                &:hover + ul{
+                    max-height: 500px;
+                }
+            }
+        }
+    }
+}

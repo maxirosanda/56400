@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formulario{
+    font-size: 18px;
+    margin: 30px auto;
+    color: white;
+    padding: 30px;
+    background-color: rgb(31, 31, 51);
+    display: grid;
+    row-gap: 10px;
+
+}
+.formulario .dato{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.formulario .dato input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.formulario .dato input:focus{
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+.boton {
+    padding: 10px 15px;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,200px);
+    gap: 10px;
+    margin: 10px;
+    grid-template-areas: "img1  img1  img2  img2"
+                         "img1  img1  img3  img4"
+                         "img1  img1  img5  img6"
+                         "img7  img7  img7  img8"
+                         "img9  img9  img11 img8"
+                         "img12 img10 img10 img8";
+}
+.galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img1{
+    grid-area: img1;
+    background-image: url(../multimedia/img/galeria/paisaje1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px #000;
+
+}
+.img1 h3 {
+    font-size: 28px;
+}
+.img1 p {
+    font-size: 18px;
+}
+@for $i from 2 to 13{
+    .img#{$i}{
+        grid-area: img#{$i};
+    }
+}
+
+@media(min-width:576px){
+    .formulario{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        align-items: center;
+    
+    }
+    .dato-nombre{
+        grid-column: 1/3 ;
+    }
+    .dato-apellido{
+        grid-column: 3/5;
+    }
+    .dato-tel{
+        grid-column:1/2;
+    }
+    .dato-mail{
+        grid-column:3/5;
+    }
+    .dato-terminos{
+        grid-column:1/3;
+    }
+
+}
+
+@media(min-width:768px){
+    .formulario{
+        width: 768px;
+        border-radius: 8px;
+        box-shadow: 5px 5px 15px 5px #000000;
+    }
+}
