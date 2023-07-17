@@ -1,0 +1,10 @@
+.titulo{
+    font-size: $font-title;
+    background-color: $bg-color;
+    @media(max-width:576px){
+        color: aquamarine;
+    }
+}
+.subtitulo{
+    color: brown;
+}

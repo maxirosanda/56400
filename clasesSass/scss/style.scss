@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navegador{
+    background-color: aqua;
+     ul{
+        list-style: none;
+        display: flex;
+        justify-content: end;
+         li a{
+                color: white;
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+                font-size: 20px;
+                 
+        }
+
+    }
+}

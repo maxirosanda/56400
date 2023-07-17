@@ -1,81 +1,77 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/*
-padre
-display:flex;
-flex-wrap:wrap;
-flex-column: column;
-justify-content:space-evenly;
-aling-items:center;
-*/
-/*
-hijos
-order:1;
-*/
-.navegador{
-    background-color: blue;
+
+.titulo {
+  font-size: 48px;
+  background-color: rgb(194, 240, 7);
+}
+@media (max-width: 576px) {
+  .titulo {
+    color: aquamarine;
+  }
+}
+
+.subtitulo {
+  color: brown;
+}
+
+.navegador {
+  background-color: rgb(194, 240, 7);
+  width: calc(100% - 20px);
+  margin: 0px 10px;
 }
 .navegador ul {
-    list-style: none;
-    display: flex;
-    justify-content: end;
-
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+@media (max-width: 576px) {
+  .navegador ul {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .navegador ul li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    padding: 10px 20px;
+  display: block;
+  color: rgba(255, 255, 255, 0.806);
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 20px;
 }
-.cajas{
+.navegador ul li a:hover {
+  color: white;
+}
+
+.cajas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
-}
-.caja{
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    margin: 10px;
-    padding: 15px;
-    color: white;
-    border: 3px solid #570505;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
- 
 }
 
-.caja h3{
-    font-size: 25px;
-    text-align: center;
+.caja {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(194, 240, 7);
+  margin: 10px;
+  padding: 15px;
+  color: white;
+  border: 3px solid #0fa783;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.caja h3 {
+  font-size: 25px;
+  text-align: center;
+}
+.caja p {
+  font-size: 20px;
+  padding: 10px;
 }
 
-.caja p{
-    font-size: 20px;
-    padding: 10px;
-}
-
-.caja1{
-    order: 3;
-    background-color: blueviolet;
-}
-.caja2{
-    order: 1;
-    background-color: cadetblue;
-    height: 150px;
-}
-.caja3{
-    order: 4;
-    background-color: coral;
-}
-
-.caja4{
-    order: 2;
-}
+/*# sourceMappingURL=styles.css.map */
