@@ -114,3 +114,40 @@
         box-shadow: 5px 5px 15px 5px #000000;
     }
 }
+.video-portada{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 500px;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    iframe{
+        width: 500px;
+        height: 400px;
+    }
+
+}
+
+.reproductor{
+    position: relative;
+    button{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        background-color: transparent;
+        border: none;
+        color: rgb(136, 8, 8);
+        font-size: 64px;
+
+    }
+}
